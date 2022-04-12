@@ -2,7 +2,7 @@
 
 if [ ! -n "$BASH" ]; then
 	echo "Non-bash shell detected, fixing..."
-	bash -c '. <('"$(command -v curl >/dev/null && echo 'curl -Ls' || echo 'wget -qO-')"' https://github.com/hikariatama/Hikka/master/install.sh) '"$*"
+	bash -c '. <('"$(command -v curl >/dev/null && echo 'curl -Ls' || echo 'wget -qO-')"' https://github.com/Isatau/ubh/blob/master/install.sh) '"$*"
 	exit $?
 fi
 
@@ -71,10 +71,21 @@ BLA::stop_loading_animation() {
   tput cnorm # Restore the terminal cursor
 }
 
-printf "\n\e[1;35;47m                   \e[0m"
-printf "\n\e[1;35;47m █ █ █ █▄▀ █▄▀ ▄▀█ \e[0m"
-printf "\n\e[1;35;47m █▀█ █ █ █ █ █ █▀█ \e[0m"
-printf "\n\e[1;35;47m                   \e[0m"
+printf "\n\e[1;35;47m                                            \e[0m"
+printf "\n\e[1;35;47m ██████████████████████████████████████████ \e[0m"
+printf "\n\e[1;35;47m █░░░░░░░░░░█░░░░░░░░░░░░░░█░░░░░░░░░░░░░░█ \e[0m"
+printf "\n\e[1;35;47m █░░▄▀▄▀▄▀░░█░░▄▀▄▀▄▀▄▀▄▀░░█░░▄▀▄▀▄▀▄▀▄▀░░█ \e[0m"
+printf "\n\e[1;35;47m █░░░░▄▀░░░░█░░▄▀░░░░░░░░░░█░░▄▀░░░░░░▄▀░░█ \e[0m"
+printf "\n\e[1;35;47m ███░░▄▀░░███░░▄▀░░█████████░░▄▀░░██░░▄▀░░█ \e[0m"
+printf "\n\e[1;35;47m ███░░▄▀░░███░░▄▀░░░░░░░░░░█░░▄▀░░░░░░▄▀░░█ \e[0m"
+printf "\n\e[1;35;47m ███░░▄▀░░███░░▄▀▄▀▄▀▄▀▄▀░░█░░▄▀▄▀▄▀▄▀▄▀░░█ \e[0m"
+printf "\n\e[1;35;47m ███░░▄▀░░███░░░░░░░░░░▄▀░░█░░▄▀░░░░░░▄▀░░█ \e[0m"
+printf "\n\e[1;35;47m ███░░▄▀░░███████████░░▄▀░░█░░▄▀░░██░░▄▀░░█ \e[0m"
+printf "\n\e[1;35;47m █░░░░▄▀░░░░█░░░░░░░░░░▄▀░░█░░▄▀░░██░░▄▀░░█ \e[0m"
+printf "\n\e[1;35;47m █░░▄▀▄▀▄▀░░█░░▄▀▄▀▄▀▄▀▄▀░░█░░▄▀░░██░░▄▀░░█ \e[0m"
+printf "\n\e[1;35;47m █░░░░░░░░░░█░░░░░░░░░░░░░░█░░░░░░██░░░░░░█ \e[0m"
+printf "\n\e[1;35;47m ██████████████████████████████████████████ \e[0m"
+printf "\n\e[1;35;47m                                            \e[0m"
 printf "\n\n\e[3;34;40m Installing...\e[0m\n\n"
 BLA::start_loading_animation
 
